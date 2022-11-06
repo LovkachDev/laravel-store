@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+html{
+    --blue-color: #3D8AFF;
+    --gray-color: rgba(0, 0, 0, 0.5);
+}
+
+body{
+    /*padding-top: 100px;*/
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    height: auto;
+    background-color: #262B37;
+}
+
+.header__wrapper{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.13);
+    background-color: #37404E;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 86px;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+
+.h-header{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--blue-color);
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.h-header::before{
+    display: block;
+    position: absolute;
+    height: 43px;
+    width: 2px;
+    content: ' ';
+    top: 0%;
+    left: -22px;
+    background-color: var(--blue-color);
+}
+
+.header__nav{
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+}
+
+.header__buttons{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__logo{
+    color: var(--blue-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #3D8AFF;
+}
+
+.header__item{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.registration__button{
+    padding: 9px 29px;
+    border: 1px solid var(--blue-color);
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    color: var(--blue-color);
+}
+
+.login__button{
+    padding: 9px 52px;
+    border: 1px solid var(--blue-color);
+    background: var(--blue-color);
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.script__item{
+    margin-top: 20px;
+    background: #37404E;
+    box-shadow: 0px 0px 30px rgba(148, 148, 148, 0.1);
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.script__price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.script__image__wrapper{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.script__price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(61, 138, 255, 0.85);
+    padding: 9px 19px;
+    border-radius: 0 0 0 15px;
+}
+
+.script__image{
+    width: 100%;
+    height: 200px;
+}
+
+.script__header{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: var(--blue-color);
+    -webkit-line-clamp: 1; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+}
+
+.script__paragraph{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 10px 0px 10px 0px; /* Убираем внешний отступ */
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+}
+
+.script__button{
+    padding: 13px 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+}
+
+.section__products{
+    margin-top: 60px;
+}
+
+.scripts__wrapper{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.burger{
+    position: relative;
+    width: 40px;
+    height: 20px;
+}
+
+.burger__line1{
+    transition: .3s;
+    position: absolute;
+    top: 5px;
+    width: 40px;
+    height: 2px;
+    background-color: var(--blue-color);
+}
+
+.burger__line2{
+    transition: .3s;
+    top: 15px;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--blue-color);
+}
+
+.burger__opened .burger__line1{
+    top: 10px;
+    rotate: 45deg;
+}
+
+.burger__opened .burger__line2{
+    top: 10px;
+    rotate: 135deg;
+}
+
+.burgerMenu__none{
+    display: none;
+}
+
+.burger__none{
+    display: none;
+}
+
+.burgerMenu{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    border-radius: 20px;
+    width: 85vw;
+}
+
+.burgerMenu__header__nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+.product__image
+{
+    width:100%;
+    height: 50vh;
+    border-radius: 10px;
+}
+.product__title
+{
+    margin-top:50px;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.80);
+}
+.product__content
+{
+    margin-top:50px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.80);
+}
+.jcc{
+    justify-content: center;
+}
+.aic{
+    align-items: center;
+}
+.flx-dir-col{
+    flex-direction: column;
+}
+.flx-dir-row{
+    flex-direction: row;
+}
+.flex{
+    display: flex;
+}
+.container-80{
+    width:80%;
+}
+.error{
+    margin-top: 17px;
+    width: 100%;
+    padding: 15px 0;
+    background: rgba(228, 121, 121, 0.15);
+    border: 1px solid #FD6666;
+    border-radius: 7px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FD6666;
+}
+.container{
+    min-width: 1200px;
+    min-height: 100vh;
+    height: auto;
+    align-self: center;
+}
+
+
+
+@media (max-width:1300px){
+    .scripts__wrapper{
+        justify-content: center;
+    }
+    .content{
+        width: 85vw;
+    }
+    .registration__button{
+        padding: 9px 10px;
+    }
+
+    .login__button{
+        padding: 9px 10px;
+    }
+    .header__buttons{
+        width: 270px;
+    }
+    .header__nav{
+        width: 300px;
+    }
+}
+
+@media (max-width:950px){
+    .burger__none{
+        display: block;
+    }
+    .header__nav, .header__buttons{
+        display: none;
+    }
+}
+
