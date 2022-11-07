@@ -10,21 +10,19 @@
 <body>
 <div class="header__wrapper">
     <header class="header content">
-        <span class="header__logo">SomeStore</span>
-        <nav class='header__nav'>
-            <a href="{{route('index')}}" class='header__item'>Скрипты</a>
-            <a href="" class='header__item'>Контакты</a>
-            <a href="" class='header__item'>FAQ</a>
-        </nav>
-{{--        <div class="header__buttons">--}}
-{{--            @if(Auth::user())--}}
-{{--                {{Auth::user()->name}}--}}
-{{--                <a href="" class="login__button">Выход</a>--}}
-{{--            @else--}}
-{{--                <a href="" class="registration__button">Регистрация</a>--}}
-{{--                <a href="" class="login__button">Вход</a>--}}
-{{--            @endif--}}
-{{--        </div>--}}
+        <div class="flex flx-dir-row">
+            <span class="header__logo">SomeStore</span>
+            <nav class='header__nav'>
+                <a href="{{route('index')}}" class='header__item'>Скрипты</a>
+                <a href="" class='header__item'>Контакты</a>
+                <a href="" class='header__item'>FAQ</a>
+            </nav>
+        </div>
+        <div class="header__buttons">
+            @if(session()->has('admin'))
+                <a href="{{route('admin.main')}}" class="login__button">Админ панель</a>
+            @endif
+        </div>
         <div class="burger burger__none">
             <div class="burger__line1"></div>
             <div class="burger__line2"></div>

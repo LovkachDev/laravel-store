@@ -84,7 +84,7 @@
                         <th scope="col">ID</th>
                         <th scope="col">Название</th>
                         <th scope="col">Цена</th>
-                        <th scope="col">Помсмотреть</th>
+                        <th scope="col">Действия</th>
                     </tr>
                     </thead>
                     @foreach($products as $product)

@@ -37,6 +37,10 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Изменить</button>
                 </form>
+                <form method="get" action="{{route('admin.delete', $product->id)}}">
+                    @csrf
+                    <button type="submit" class="mt-2 btn btn-danger">Удалить</button>
+                </form>
                 @foreach ($errors->all() as $error)
                     <div class = "flex jcc aic error" style = "max-width: 300px;">{{$error}}</div>
                 @endforeach

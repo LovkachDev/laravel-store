@@ -30,6 +30,8 @@ Route::middleware('admin')->group(function(){
         Route::get('edit/{product}', [\App\Http\Controllers\admin\updateProductController::class, 'updateFrontend'])->name('admin.edit.view');
         Route::patch('update/{product}', [\App\Http\Controllers\admin\updateProductController::class, 'updateBackend'])->name('admin.update');
 
+        Route::get('delete/{product}', [\App\Http\Controllers\admin\deleteProductController::class, 'delete'])->name('admin.delete');
+
 
         Route::get('main', [\App\Http\Controllers\admin\AdminController::class, 'main'])->name('admin.main');
 
