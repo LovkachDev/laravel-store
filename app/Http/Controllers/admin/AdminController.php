@@ -32,21 +32,8 @@ class AdminController extends Controller
         return redirect()->route('admin.login')->withErrors('Логин или пароль не верный');
     }
     public function main(){
-        return view('admin.index');
-    }
-
-    public function createFrontend(){
-        return view('admin.create');
-    }
-    public function createBackend(){
-        $data = request()->validate([
-            'title' => 'required|string|max:50',
-            'description' => 'required|string|max:10000',
-            'image' => 'required|string|max:1000',
-            'price' => 'required|string|max:25'
-        ]);
-        Product::create($data);
-
-        return redirect()->route('index');
+        $products = Product::all();
+        $totalProducts = Product::count();
+        return view('admin.content', compact('products', 'totalProducts'));
     }
 }

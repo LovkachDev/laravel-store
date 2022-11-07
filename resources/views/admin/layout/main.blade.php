@@ -9,6 +9,6 @@
     <link rel="stylesheet" href="{{asset('css/admin.css')}}">
 </head>
 <body class = "flex jcc aic">
-    @yield('admin')
+@yield('admin')
 </body>
 </html>
