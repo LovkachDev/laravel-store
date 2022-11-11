@@ -13,7 +13,7 @@
         <div class="flex flx-dir-row">
             <span class="header__logo">SomeStore</span>
             <nav class='header__nav'>
-                <a href="{{route('index')}}" class='header__item'>Скрипты</a>
+                <a href="{{route('index')}}" class='header__item'>Товары</a>
                 <a href="" class='header__item'>Контакты</a>
                 <a href="" class='header__item'>FAQ</a>
             </nav>
@@ -29,7 +29,7 @@
         </div>
         <div class="burgerMenu burgerMenu__none">
             <nav class='burgerMenu__header__nav'>
-                <a href="#" class='header__item'>Скрипты</a>
+                <a href="#" class='header__item'>Товары</a>
                 <a href="#" class='header__item'>Контакты</a>
                 <a href="#" class='header__item'>FAQ</a>
                 <a href="#" class="registration__button">Регистрация</a>

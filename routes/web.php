@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('index');
 Route::get('product/{product}', [\App\Http\Controllers\HomeController::class, 'product'])->name('product');
+Route::get('buy/{product}', [\App\Http\Controllers\HomeController::class, 'product'])->name('product');
 //Route::get('/create', [\App\Http\Controllers\HomeController::class, 'addProducts'])->name('add');
 
 Route::middleware('admin')->group(function(){
@@ -27,6 +28,9 @@ Route::middleware('admin')->group(function(){
         Route::get('create', [\App\Http\Controllers\admin\createProductController::class, 'createFrontend'])->name('admin.create.view');
         Route::post('create', [\App\Http\Controllers\admin\createProductController::class, 'createBackend'])->name('admin.create');
 
+        Route::get('add/goods', [\App\Http\Controllers\admin\createGoodsController::class, 'view'])->name('admin.goods.view');
+        Route::post('add/create', [\App\Http\Controllers\admin\createGoodsController::class, 'addGoods'])->name('admin.goods');
+
         Route::get('edit/{product}', [\App\Http\Controllers\admin\updateProductController::class, 'updateFrontend'])->name('admin.edit.view');
         Route::patch('update/{product}', [\App\Http\Controllers\admin\updateProductController::class, 'updateBackend'])->name('admin.update');
 
@@ -34,7 +38,6 @@ Route::middleware('admin')->group(function(){
 
 
         Route::get('main', [\App\Http\Controllers\admin\AdminController::class, 'main'])->name('admin.main');
-
 
     });
 });

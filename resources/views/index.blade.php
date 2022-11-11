@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section('content')
-    <div class="scripts__wrapper">
+    <div class="scripts__wrapper main__wrap">
         @foreach($products as $product)
             <div class="script__item">
                 <div class="script__image__wrapper">

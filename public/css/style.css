@@ -217,12 +217,24 @@ a{
 .section__products{
     margin-top: 60px;
 }
-
-.scripts__wrapper{
-    margin-top: 90px;
-    display: flex;
+.dark-bg{
+    background-color: #37404E;
+}
+.main__wrap{
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+.scripts__wrapper{
+    position: relative;
+    width: 100%;
+    top:50px;
+    border-radius: 10px;
+    height:auto;
+    display: flex;
+}
+.product__wrap{
+    /*justify-content: space-between;*/
+    width:100%;
 }
 
 .burger{
@@ -287,19 +299,40 @@ a{
 }
 .product__image
 {
-    width:100%;
-    height: 50vh;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
     border-radius: 10px;
+}
+.product__details
+{
+    margin:30px;
+    width:33%;
+}
+.product__buttons
+{
+    margin-top:21px;
+    justify-content: space-between;
+}
+.w-33{
+    width:33%;
+}
+.ml-10{
+    margin-left:10px;
 }
 .product__title
 {
-    margin-top:50px;
+    margin-top:10px;
     font-size: 35px;
     color: rgba(255, 255, 255, 0.80);
 }
 .product__content
 {
-    margin-top:50px;
+    margin:20px 20px 25px 10px;
+    justify-content: start;
+}
+.product__text{
+    margin:0px;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.80);
 }
